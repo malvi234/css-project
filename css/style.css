@@ -1,0 +1,263 @@
+/* -------------------------
+   General Reset & Body
+-------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* -------------------------
+   Header & Footer
+-------------------------- */
+.site-header,
+.site-footer {
+  background-color: #005f73;
+  color: white;
+  padding: 1rem 0;
+}
+
+.site-footer {
+  margin-top: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 40px;
+  height: auto;
+}
+
+/* -------------------------
+   Navigation
+-------------------------- */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none; 
+}
+
+/* -------------------------
+   Hero Section
+-------------------------- */
+.hero {
+  background: #94d2bd;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-buttons {
+  margin-top: 1rem;
+}
+
+/* -------------------------
+   Buttons
+-------------------------- */
+.btn {
+  padding: 0.5rem 1rem;
+  background: #006d77;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.btn.primary {
+  background: #ee6c4d;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* -------------------------
+   Layout Grids
+-------------------------- */
+.grid-2,
+.grid-3 {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+}
+
+.grid-3 {
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.help-callout {
+  margin-top: 2rem;
+}
+
+/* -------------------------
+   Tables
+-------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-top: 1rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+/* -------------------------
+   Text & Links
+-------------------------- */
+ul {
+  padding-left: 1.25rem;
+}
+
+a {
+  color: #005f73;
+}
+
+/* -------------------------
+   Footer Nav
+-------------------------- */
+.site-footer nav {
+  margin-top: 1rem;
+}
+
+/* -------------------------
+   Page Specific Tweaks
+-------------------------- */
+.about-text h3 {
+  margin-top: 2rem;
+}
+
+/* -------------------------
+   Responsive Media Queries
+-------------------------- */
+
+/* Tablet & Up */
+@media (min-width: 600px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .flex-between {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  }
+
+  .main-nav {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #005f73;
+    padding: 1rem 0;
+    gap: 0.5rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;
+  }
+}

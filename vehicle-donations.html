@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="ma">
+  <title>Vehicle Donations | NAWS</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/menu.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container flex-between">
+      <a href="index.html" class="logo">
+        <img src="assets/pawprint-logo.png" alt="NAWS Logo Icon" class="logo-icon" />
+        <span>NAWS</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle Navigation">
+        ☰
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="vehicle-donations.html" class="active">Vehicle Donations</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Donate Your Vehicle</h1>
+        <p>
+          Donate your car, truck, SUV, van, motorcycle, trailer, or boat to NAWS and make a real difference in the lives of animals.
+        </p>
+      </div>
+    </section>
+
+    <section class="donation-content">
+      <div class="container">
+        <h2>Why Donate?</h2>
+        <ul>
+          <li>Get a lawful IRS tax deduction for the fair market value</li>
+          <li>Avoid DMV paperwork and vehicle listing headaches</li>
+          <li>Free pickup—running or not (some restrictions apply)</li>
+          <li>Help fund NAWS services for pets in need</li>
+        </ul>
+
+        <h2>Donation Form</h2>
+        <p>Please fill out the basic vehicle donation form below. Our partner will contact you to finalize the pickup.</p>
+
+        <!-- START OF PLACEHOLDER FORM -->
+        <form action="#" method="post" class="donation-form">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label>First Name: <input type="text" name="first-name" required></label><br>
+            <label>Last Name: <input type="text" name="last-name" required></label><br>
+
+            <label>Address Line 1: <input type="text" name="address1" required></label><br>
+            <label>Address Line 2: <input type="text" name="address2"></label><br>
+            <label>City: <input type="text" name="city"></label><br>
+            <label>State: <input type="text" name="state"></label><br>
+            <label>Zip Code: <input type="text" name="zip"></label><br>
+            <label>Country: <input type="text" name="country"></label><br>
+
+            <label>Phone Number: <input type="tel" name="phone"></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Vehicle Information</legend>
+            <label>Type of Vehicle: <input type="text" name="vehicle-type" required></label><br>
+            <label>Year: <input type="number" name="year"></label><br>
+            <label>Mileage: <input type="text" name="mileage"></label><br>
+            <label>Make: <input type="text" name="make"></label><br>
+            <label>Model: <input type="text" name="model"></label><br>
+            <label>VIN: <input type="text" name="vin" required></label><br>
+            <label>License Plate #: <input type="text" name="plate"></label><br>
+            <label>Name on Title: <input type="text" name="title-name"></label><br>
+            <label>State of Title: <input type="text" name="title-state"></label><br>
+
+            <p>Salvage Title?</p>
+            <label><input type="radio" name="salvage" value="Yes"> Yes</label>
+            <label><input type="radio" name="salvage" value="No"> No</label><br>
+
+            <p>Is registration current?</p>
+            <label><input type="radio" name="registration" value="Yes"> Yes</label>
+            <label><input type="radio" name="registration" value="No"> No</label><br>
+
+            <p>Does vehicle start?</p>
+            <label><input type="radio" name="starts" value="Yes" required> Yes</label>
+            <label><input type="radio" name="starts" value="No"> No</label><br>
+
+            <p>Is vehicle drivable?</p>
+            <label><input type="radio" name="drivable" value="Yes"> Yes</label>
+            <label><input type="radio" name="drivable" value="No"> No</label><br>
+
+            <p>Is vehicle complete?</p>
+            <label><input type="radio" name="complete" value="Yes"> Yes</label>
+            <label><input type="radio" name="complete" value="No"> No</label><br>
+          </fieldset>
+
+          <button type="submit" class="btn primary">Submit Donation Request</button>
+        </form>
+        <!-- END OF PLACEHOLDER FORM -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Northland Animal Welfare Society</p>
+      <nav aria-label="Footer navigation">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="vehicle-donations.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="process.html">Process</a></li>
+        </ul>
+      </nav>
+      <p style="margin-top: 1rem; font-size: 0.9rem;">
+        6972 N Broadway Gladstone, MO 64118 • 816-336-1888
+      </p>
+      <p style="font-size: 0.8rem;">
+        Proudly powered by <a href="https://www.c2datasolutions.com/" style="color: white;">c2 Data Solutions</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
