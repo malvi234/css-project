@@ -1,150 +1,95 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Madina Alvi</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="ma">
+  <title>About Us | NAWS</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/menu.js"></script>
 </head>
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container flex-between">
+      <a href="index.html" class="logo">
+        <img src="assets/pawprint-logo.png" alt="NAWS" class="logo-icon" />
+        <span>NAWS</span>
+      </a>
 
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="brand" href="index.html" aria-label="Go to Home">
-                <span class="brand-mark" aria-hidden="true">●</span>
-                <span class="brand-name">Madina Alvi</span>
-            </a>
+      <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
 
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-                <span class="sr-only">Open menu</span>
-                <span class="hamburger" aria-hidden="true"></span>
-            </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="vehicle-donations.html">Vehicle Donations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <nav id="site-nav" class="site-nav" aria-label="Primary">
-                <ul class="nav-list">
-                    <li><a class="nav-link" href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="nav-link" href="about.html" aria-current="page">About</a></li>
-                    <li><a class="nav-link nav-link--button" href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Our Mission</h1>
+        <p>The Northland Animal Welfare Society, Inc. ("NAWS") is a nonprofit 501(c)(3) organization that serves as a coalition for Clay and Platte counties dedicated to educating citizens regarding the humane treatment of animals. NAWS works to create awareness, regarding the need to reduce the number of homeless animals and to build a care and adoption campus so that every animal may live in a safe and caring environment.</p>
+      </div>
+    </section>
 
-    <main id="main">
-        <!-- Intro -->
-        <section class="about-hero">
-            <div class="container">
-                <div class="about-hero-card">
-                    <p class="kicker">About Me</p>
-                    <h1 class="page-title">Creative designer and web developer with a love for clean, thoughtful design.</h1>
-                    <p class="page-intro">
-                        Hi! I’m Madina. I enjoy creating visually balanced work that blends creativity,
-                        simplicity, and strong user experience. My portfolio reflects my interests in art,
-                        design, and responsive web development.
-                    </p>
-                </div>
-            </div>
+    <section class="about-details">
+      <div class="container grid-2">
+
+        <section class="about-text">
+          <h2>NAWS Facts</h2>
+          <p>The Northland Animal Welfare Society opened the NAWS Low Cost Spay/Neuter Clinic on February 25, 2012, making it the first ever spay and neuter clinic in the Northland. We believe that by offering education and low cost spay/neuter services to the higher risk, low income pet owners in the Northland, we can reduce the number of litters born and the number of animals brought into shelters and rescue groups throughout the area. Our target populations are low income residents who receive some type of government assistance such as: food stamps, Medicaid, SS, disability, etc., or people who are not receiving assistance and are working, but only earn less than $30,000 a year.</p>
+
+          <p>We are not a full service clinic and only provide the following services for dogs and cats: spay, neuter, vaccinations, micro-chip, nail trim, heart-worm test, feline FIV/Leukemia test, De-worming, tapeworm and capstar (24 hour flea treatment). Additionally, we also service clients (who do not have to meet income guidelines) in reducing the free roaming cat population in their neighborhood through the Trap-Neuter-Return (TNR) Program. Plus we offer services to area rescue groups at a reduced cost. Rescue group animals are altered and vetted prior to being adopted out thus preventing unplanned litters which would most likely end up in the already over capacity city shelters.</p>
+
+          <p>Some businesses and people in the community regularly donate food and pet related items. This has afforded us the opportunity to have an onsite Food Pantry to assist our customers and rescue groups, as well as a Pet Boutique of gently used and new items for NAWS customers.</p>
+
+          <h3 style="margin-top: 2rem;">2020 Statistics</h3>
+          <ul>
+            <li>Served over 7,000 families</li>
+            <li>Spay/Neutered 3,111</li>
+            <li>Microchips 557</li>
+            <li>Vaccinations 7,104</li>
+            <li>Grooming 912</li>
+            <li>Pet Pantry 500,000 pounds of food</li>
+          </ul>
         </section>
 
-        <!-- Bio Section -->
-        <section class="about-section">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-image" aria-hidden="true"></div>
+        <aside class="about-image">
+          <figure>
+            <img src="assets/cat.png" alt="Cat at NAWS Clinic" style="max-width: 100%; border-radius: 8px;" />
+          </figure>
+        </aside>
 
-                    <div class="about-content">
-                        <h2>My Story</h2>
-                        <p>
-                            I am a creative and detail-oriented designer who enjoys combining artistic ideas
-                            with digital design. I am especially interested in clean layouts, gallery-inspired
-                            visuals, and building websites that feel both elegant and easy to use.
-                        </p>
-                        <p>
-                            Through my coursework and projects, I have developed skills in web design,
-                            front-end development, and visual communication. I enjoy learning new techniques
-                            and applying them in ways that feel creative, intentional, and user-friendly.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      </div>
+    </section>
+  </main>
 
-        <!-- Skills -->
-        <section class="about-section section-alt">
-            <div class="container">
-                <div class="section-head">
-                    <h2 class="section-title">Skills</h2>
-                    <p class="section-subtitle">A few of the creative and technical skills I use in my work.</p>
-                </div>
-
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>Design</h3>
-                        <ul>
-                            <li>Wireframing</li>
-                            <li>Typography</li>
-                            <li>Layout Design</li>
-                            <li>Color Theory</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Web Development</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Responsive Design</li>
-                            <li>Basic JavaScript</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Creative Process</h3>
-                        <ul>
-                            <li>Planning & Research</li>
-                            <li>Visual Storytelling</li>
-                            <li>Project Organization</li>
-                            <li>User-Focused Thinking</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tools -->
-        <section class="about-section">
-            <div class="container">
-                <div class="section-head">
-                    <h2 class="section-title">Tools I Use</h2>
-                    <p class="section-subtitle">The platforms and software I use during the design process.</p>
-                </div>
-
-                <div class="tools-list">
-                    <span class="tool-pill">Figma</span>
-                    <span class="tool-pill">HTML</span>
-                    <span class="tool-pill">CSS</span>
-                    <span class="tool-pill">JavaScript</span>
-                    <span class="tool-pill">Visual Studio Code</span>
-                    <span class="tool-pill">Adobe Illustrator</span>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p class="footer-copy">© <span id="year"></span> Madina Alvi. All rights reserved.</p>
-
-            <ul class="social">
-                <li><a class="social-link" href="#" aria-label="Instagram">IG</a></li>
-                <li><a class="social-link" href="#" aria-label="Behance">Be</a></li>
-                <li><a class="social-link" href="#" aria-label="GitHub">GH</a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Northland Animal Welfare Society</p>
+      <nav aria-label="Footer navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="vehicle-donations.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="process.html">Process</a></li>
+        </ul>
+      </nav>
+      <p style="margin-top: 1rem; font-size: 0.9rem;">
+        6972 N Broadway Gladstone, MO 64118 • 816-336-1888
+      </p>
+      <p style="font-size: 0.8rem;">
+        Proudly powered by <a href="https://www.c2datasolutions.com/" style="color: white;">c2 Data Solutions</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
